@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国之重器——民俗漆艺体验</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function saveSelection(selection, selectionName) {
+            localStorage.setItem('selectedVessel', selection);
+            localStorage.setItem('selectedVesselName', selectionName);
+            window.location.href = 'page4.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>国之重器——民俗漆艺体验</h1>
+        </header>
+        <div class="gallery">
+            <div class="gallery-item" onclick="saveSelection('vessel1', '器物1')"><img src="images/vessel1.png" alt="器物1"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel2', '器物2')"><img src="images/vessel2.png" alt="器物2"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel3', '器物3')"><img src="images/vessel3.png" alt="器物3"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel4', '器物4')"><img src="images/vessel4.png" alt="器物4"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel5', '器物5')"><img src="images/vessel5.png" alt="器物5"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel6', '器物6')"><img src="images/vessel6.png" alt="器物6"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel7', '器物7')"><img src="images/vessel7.png" alt="器物7"></div>
+            <div class="gallery-item" onclick="saveSelection('vessel8', '器物8')"><img src="images/vessel8.png" alt="器物8"></div>
+        </div>
+        <footer>
+            <p>请选择您想要制作的器物</p>
+        </footer>
+    </div>
+</body>
+</html>

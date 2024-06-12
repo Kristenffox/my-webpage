@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国之重器——民俗漆艺体验</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function savePatternSelection(pattern, patternName) {
+            localStorage.setItem('selectedPattern', pattern);
+            localStorage.setItem('selectedPatternName', patternName);
+            window.location.href = 'page5.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>国之重器——民俗漆艺体验</h1>
+        </header>
+        <div class="pattern-gallery">
+            <div class="pattern-item" onclick="savePatternSelection('pattern1', '凤纹')"><img src="images/pattern1.png" alt="纹样1"><p>凤纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern2', '卷云纹')"><img src="images/pattern2.png" alt="纹样2"><p>卷云纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern3', '方块纹')"><img src="images/pattern3.png" alt="纹样3"><p>方块纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern4', '鸟纹')"><img src="images/pattern4.png" alt="纹样4"><p>鸟纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern5', '涡纹')"><img src="images/pattern5.png" alt="纹样5"><p>涡纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern6', '鹿纹')"><img src="images/pattern6.png" alt="纹样6"><p>鹿纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern7', '蟠螭纹')"><img src="images/pattern7.png" alt="纹样7"><p>蟠螭纹</p></div>
+            <div class="pattern-item" onclick="savePatternSelection('pattern8', '夔曲纹')"><img src="images/pattern8.png" alt="纹样8"><p>夔曲纹</p></div>
+        </div>
+        <footer>
+            <p>请选择您喜欢的纹样</p>
+        </footer>
+    </div>
+</body>
+</html>
